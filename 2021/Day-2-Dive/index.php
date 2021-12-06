@@ -3,7 +3,7 @@
 * - Advent Of Code -
 * - 2021 -
 * --- Day 2: Dive --
-* https://adventofcode.com/2021/day/1
+* https://adventofcode.com/2021/day/2
 * By TheKorko
 * https://github.com/thekorko
 * https://quartex.net/
