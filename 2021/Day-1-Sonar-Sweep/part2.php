@@ -25,21 +25,20 @@ $c = 0;
 $sumActual = 0;
 $sumBefore = 0;
 //end
-$mod = sizeof($inputList) % 3;
+//$mod = sizeof($inputList) % 3;
 //echo "$mod<br>";
-$limit = sizeof($inputList) - $mod;
+$limit = sizeof($inputList)-1;
 //echo "$limit<br>";
-var_dump($inputList);
+//var_dump($inputList);
 foreach ($inputList as $number) {
   //echo "$i and $counter_b<br>";
   $continue=True;
-  while ($continue) {
+  while (($counter_c<=$limit) && $continue) {
     $sumBefore = $sumActual;
     $a = $inputList[$counter_a];
     $b = $inputList[$counter_b];
     $c = $inputList[$counter_c];
     $sumActual = $a+$b+$c;
-
     if ($sumBefore==0) {
       echo "$sumActual (N/A - no previous measurement)<br>";
     } elseif ($sumActual>$sumBefore) {
@@ -56,9 +55,9 @@ foreach ($inputList as $number) {
   $counter_c++;
   $counter_b++;
 }
-echo "In this example, there are $howManyLargerDepths measurements that are larger than the previous measurement.";
+echo "In this example, there are $howManyLargerDepths measurements sums that are larger than the previous measurement.";
 //How many sums are larger than the previous sum?
-//
-//
+//My answer was 1858
+//That's the right answer! You are one gold star closer to finding the sleigh keys.
 
 ?>
